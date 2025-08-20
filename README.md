@@ -42,7 +42,7 @@ The enhanced Streamlit UI provides:
 * **Web Search Demo:** Try prompts like *“latest AI news”* to see live results.
 
 **Example UI:**
-![UI Screenshot](docs/docs/agentic_ai_chatbot_with_web.jpg)
+![UI Screenshot](docs/agentic_ai_chatbot_with_web.jpg)
 
 ---
 
