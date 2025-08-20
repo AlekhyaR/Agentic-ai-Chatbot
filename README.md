@@ -98,5 +98,5 @@ Set your keys in a `.env` file or enter them via the Streamlit UI:
 
 ✨ **Enjoying this learning curve towards next-generation agentic AI chat with tools and live web search, all in one UI!**
 
-Code Link: https://github.com/AlekhyaR/Agentic-Chatbot
+#### ** Code Link: https://github.com/AlekhyaR/Agentic-Chatbot **
 
