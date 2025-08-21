@@ -1,58 +1,57 @@
-# Agentic AI Chatbot including Basic Chatbot and Chatbot with Web using LangGraph 🤖
 
-This project is a **stateful Agentic AI chatbot** built using [LangGraph](https://python.langchain.com/docs/langgraph/), designed for flexible agent workflows as graphs. The chatbot now supports **multiple LLMs**, **custom use cases**, and **web search via Tavily API**, all integrated into a **Streamlit-powered UI** for seamless user interaction.
+# Agentic AI Chatbot with Web using LangGraph 🤖
+
+This project is a **stateful Agentic AI chatbot** built using [LangGraph](https://python.langchain.com/docs/langgraph/), designed for flexible agent workflows as graphs. The chatbot supports **multiple LLMs**, **custom use cases**, and **live AI news summaries via Tavily API**, all integrated into a **Streamlit-powered UI** for seamless user interaction.
 
 ---
 
 ## 🚀 Features
 
-* 🔹 **Agentic AI** workflow powered by LangGraph.
-* 🔹 **Multiple LLM support:** Easily swap backend models (e.g., Groq, LLaMA).
-* 🔹 **Configurable models and tools** via dropdown selectors in the UI.
-* 🔹 **Multiple Use Cases:**
-
-  * Basic Chatbot
-  * Chatbot with Web Search (using Tavily API)
-* 🔹 **Streamlit UI:** Modern and simple interaction.
-* 🔹 **Stateful conversations:** Conversation history and context retention.
-* 🔹 **Web search enabled:** Use Tavily API for up-to-date information from the internet.
+* 🔹 **Agentic AI workflows** powered by LangGraph.  
+* 🔹 **Multiple LLM support:** Easily switch between Groq, LLaMA, and others.  
+* 🔹 **Configurable tools and models** via Streamlit UI dropdowns.  
+* 🔹 **Multiple Use Cases:**  
+  - Basic Chatbot  
+  - Chatbot with Web Search (via Tavily API)  
+  - **AI News Explorer (new!)** → Fetch & summarize AI news daily, weekly, monthly  
+* 🔹 **Stateful conversations** with retained context.  
+* 🔹 **Web search integration:** Access up-to-date information dynamically.  
 
 ---
 
 ## 📂 Project Structure
 
-**Screenshot of Project Structure:**
-![UI Screenshot](docs/chatbot_with_web_project_structure.png)
+** Attaching screenshot of Project Structure below **  
+![Project Structure](docs/chatbot_with_web_project_structure.png)
 
 ---
 
 ## 🖥️ User Interface
 
-The enhanced Streamlit UI provides:
+The Streamlit UI now includes an **AI News Explorer** panel:
 
-* **LLM Selection:** Dropdown to choose from supported LLMs (e.g., Groq, LLaMA).
-* **Model Selection:** Select available models.
-* **API Key Entry:** Submit your API keys right in the app.
-* **Use Case Selection:**
+* **LLM Selection:** Choose supported models (e.g., Groq, LLaMA).  
+* **Model Selection:** Select from available models.  
+* **API Key Entry:** Input your API keys securely.  
+* **Use Case Selection:**  
+  - **Basic Chatbot:** Regular conversational agent.  
+  - **Chatbot with Tools:** Extend with extra capabilities.  
+  - **AI News:** Summarize AI news from India and globally using Tavily API.  
+* **Time Frame Selection:** Fetch AI news **daily**, **weekly**, **monthly**  
+* **One-click fetch:** Press **"Fetch Latest AI News"** to get summarized articles.  
 
-  * **Basic Chatbot:** Regular conversational agent.
-  * **Chatbot with Tools:** Chatbot can access additional tools.
-  * **Chatbot with Web:** Chatbot can fetch real-time information from the web via Tavily API.
-* **Easy Chat Experience:** Enter messages and see contextual replies.
-* **Web Search Demo:** Try prompts like *“latest AI news”* to see live results.
-
-**Example UI:**
-![UI Screenshot](docs/agentic_ai_chatbot_with_web.jpg)
+### **Example: Monthly AI News Summary**
+![AI News Explorer](docs/ai_news_explorer.png)
 
 ---
 
 ## 🔑 Configuration & API Keys
 
-Set your keys in a `.env` file or enter them via the Streamlit UI:
+Set your keys in a `.env` file or enter them directly via the Streamlit UI:
 
-* `GROQ_API_KEY` – For Groq LLM.
-* `LLAMA_API_KEY` – For LLaMA (if used).
-* `TAVILY_API_KEY` – **Required for Chatbot with Web use case** to enable live web search.
+* `GROQ_API_KEY` - For Groq LLM.
+* `LLAMA_API_KEY` - For LLaMA (if used).
+* `TAVILY_API_KEY` - **Required for AI News Explorer to fetch real-time news.**
 
 ---
 
@@ -64,9 +63,23 @@ Set your keys in a `.env` file or enter them via the Streamlit UI:
 * Response: `Hi! It's nice to meet you. Is there something I can help you with or would you like to chat?`
 
 ### **Chatbot with Web**
+- Ask: `Provide me the recent AI news`
+- Response: *(Bot summarizes latest articles; uses Tavily API for search)*
+
+### **AI News Explorer**
 
 * Ask: `Provide me the recent AI news`
-* Response: *(Bot summarizes the latest articles using Tavily API)*
+* Select **Monthly** → Bot fetches and summarizes articles like:
+
+  ```markdown
+  2025-06-07
+  - Consumer watchdog directs ecommerce platforms to conduct self-audits...
+    [link](https://yourstory.com/2025/06/consumer-watchdog-directs-ecommerce-platforms-to-conduct-self-audits)
+
+  2025-06-04
+  - Meraqui: Building Bharat's Workforce OS with Tech, Trust, and Vision...
+    [link](https://yourstory.com/2025/06/meraqui-workforce-ai-platform-india)
+  ```
 
 ---
 
@@ -82,7 +95,6 @@ Set your keys in a `.env` file or enter them via the Streamlit UI:
 
 ## 📌 Future Improvements
 
-* Add more **use cases** (e.g., retrieval augmentation, advanced tools, multi-step workflows).
 * Support **multi-agent graphs** and teamwork.
 * Options for **cloud deployment** (Streamlit Cloud, AWS, GCP, etc.).
 
@@ -96,7 +108,5 @@ Set your keys in a `.env` file or enter them via the Streamlit UI:
 
 ---
 
-✨ **Enjoying this learning curve towards next-generation agentic AI chat with tools and live web search, all in one UI!**
-
-#### ** Code Link: https://github.com/AlekhyaR/Agentic-Chatbot **
+**Enjoy next-generation agentic AI chat with tools, live web search, and AI news summaries — all in one UI!**
 
