@@ -41,7 +41,7 @@ The Streamlit UI now includes an **AI News Explorer** panel:
 * **One-click fetch:** Press **"Fetch Latest AI News"** to get summarized articles.  
 
 ### **Example: Monthly AI News Summary**
-![AI News Explorer](docs/ai_news_explorer.png)
+![AI News Explorer](docs/agentic_ai_chatbot_with_ai_news.png)
 
 ---
 
