@@ -1,5 +1,5 @@
 
-# Agentic AI Chatbot with Web using LangGraph 🤖
+# Agentic AI Chatbot using LangGraph 🤖 — From Simple Conversations to Web Tools and AI News Feeds
 
 This project is a **stateful Agentic AI chatbot** built using [LangGraph](https://python.langchain.com/docs/langgraph/), designed for flexible agent workflows as graphs. The chatbot supports **multiple LLMs**, **custom use cases**, and **live AI news summaries via Tavily API**, all integrated into a **Streamlit-powered UI** for seamless user interaction.
 
@@ -109,4 +109,3 @@ Set your keys in a `.env` file or enter them directly via the Streamlit UI:
 ---
 
 **Enjoy next-generation agentic AI chat with tools, live web search, and AI news summaries — all in one UI!**
-
